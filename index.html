@@ -48,12 +48,48 @@
             </li>
           </ul>
         </address>
+
+        <button class="header-burger-btn" type="button " data-menu-open>
+          <svg class="header-burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="header-mobile-menu" data-menu>
+          <div class="container mobile-menu-container">
+            <button class="mobile-menu-close" data-menu-close>Close</button>
+            <nav class="mobile-menu-nav">
+              <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link header-studio-link" href="./index.html">Studio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="mobile-menu-contacts">
+              <ul class="mobile-contacts-list">
+                <li>
+                  <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- SECTION HERO -->
-      <section class="section-hero">
+      <section class="section-hero hiden">
         <div class="container hero-conteiner">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="button-service" type="button">Order Service</button>
@@ -61,7 +97,7 @@
       </section>
 
       <!-- SECTION BUSINESS SOLUTIONS -->
-      <section class="section-solutions section-paddings">
+      <section class="section-solutions section-paddings hiden">
         <div class="container solutions-conteiner">
           <h2 class="visually-hidden">Business solutions</h2>
           <ul class="solutions-list">
@@ -118,7 +154,7 @@
       </section>
 
       <!--   SECTION OUR TEAM  -->
-      <section class="section-team">
+      <section class="section-team hiden">
         <div class="container team-conteiner">
           <h2 class="section-title team-title">Our Team</h2>
           <ul class="team-list">
@@ -131,7 +167,7 @@
                 height="260"
               />
               <div class="fullname-profession">
-                <h3 class="title name-title">Mark Guerrero</h3>
+                <h3 class="name-title">Mark Guerrero</h3>
                 <p class="section-text text-team">Product Designer</p>
                 <ul class="team-list-icon">
                   <li class="team-item-icon">
@@ -174,7 +210,7 @@
                 height="260"
               />
               <div class="fullname-profession">
-                <h3 class="title name-title">Tom Ford</h3>
+                <h3 class="name-title">Tom Ford</h3>
                 <p class="section-text text-team">Frontend Developer</p>
                 <ul class="team-list-icon">
                   <li class="team-item-icon">
@@ -217,7 +253,7 @@
                 height="260"
               />
               <div class="fullname-profession">
-                <h3 class="title name-title">Camila Garcia</h3>
+                <h3 class="name-title">Camila Garcia</h3>
                 <p class="section-text text-team">Marketing</p>
                 <ul class="team-list-icon">
                   <li class="team-item-icon">
@@ -260,7 +296,7 @@
                 height="260"
               />
               <div class="fullname-profession">
-                <h3 class="title name-title">Daniel Wilson</h3>
+                <h3 class="name-title">Daniel Wilson</h3>
                 <p class="section-text text-team">UI Designer</p>
                 <ul class="team-list-icon">
                   <li class="team-item-icon">
@@ -299,7 +335,7 @@
       </section>
 
       <!-- SECTION OUR PORTFOLIO -->
-      <section class="section-portfolio section-paddings">
+      <section class="section-portfolio section-paddings hiden">
         <div class="container portfolio-conteiner">
           <h2 class="section-title portfolio-title">Our Portfolio</h2>
           <ul class="portfolio">
@@ -317,7 +353,7 @@
                 </p>
               </div>
               <div class="portfolio-item">
-                <h3 class="title name-portfolio-title">Banking App</h3>
+                <h3 class="name-portfolio-title">Banking App</h3>
                 <p class="section-text portfolio-text">App</p>
               </div>
             </li>
@@ -335,7 +371,7 @@
                 </p>
               </div>
               <div class="portfolio-item">
-                <h3 class="title name-portfolio-title">Cashless Payment</h3>
+                <h3 class="name-portfolio-title">Cashless Payment</h3>
                 <p class="section-text portfolio-text">Marketing</p>
               </div>
             </li>
@@ -353,7 +389,7 @@
                 </p>
               </div>
               <div class="portfolio-item">
-                <h3 class="title name-portfolio-title">Meditation App</h3>
+                <h3 class="name-portfolio-title">Meditation App</h3>
                 <p class="section-text portfolio-text">App</p>
               </div>
             </li>
@@ -371,7 +407,7 @@
                 </p>
               </div>
               <div class="portfolio-item">
-                <h3 class="title name-portfolio-title">Taxi Service</h3>
+                <h3 class="name-portfolio-title">Taxi Service</h3>
                 <p class="section-text portfolio-text">Marketing</p>
               </div>
             </li>
@@ -389,7 +425,7 @@
                 </p>
               </div>
               <div class="portfolio-item">
-                <h3 class="title name-portfolio-title">Screen Illustrations</h3>
+                <h3 class="name-portfolio-title">Screen Illustrations</h3>
                 <p class="section-text portfolio-text">Design</p>
               </div>
             </li>
@@ -407,7 +443,7 @@
                 </p>
               </div>
               <div class="portfolio-item">
-                <h3 class="title name-portfolio-title">Online Courses</h3>
+                <h3 class="name-portfolio-title">Online Courses</h3>
                 <p class="section-text portfolio-text">Marketing</p>
               </div>
             </li>
@@ -417,7 +453,7 @@
     </main>
 
     <!-- SECTION FOOTER -->
-    <footer class="section-footer">
+    <footer class="section-footer hiden">
       <div class="container footer-container">
         <div class="footer-container-logo">
           <a class="logo footer-logo" href="./index.html"
@@ -558,5 +594,7 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
