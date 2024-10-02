@@ -282,33 +282,107 @@ body {
   flex-direction: column;
   height: 100%;
 }
+
+/* MOBILE MENU BTN CLOSE */
 .mobile-menu-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  line-height: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fdfdff;
+  fill: #2e2f42;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.mobile-menu-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+  border: none;
+  background-color: #404bbf;
+  fill: #ffffff;
+}
+
+/* MOBILE MENU NAVIGATION */
 .mobile-menu-nav {
   margin-bottom: auto;
 }
 .mobile-menu-list {
-}
-.mobile-menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: #2e2f42;
 }
-.header-studio-link {
+.mobile-menu-studio-link {
+  color: #404bbf;
 }
+
+/* MOBILE MENU CONTACTS */
 .mobile-menu-contacts {
+  font-style: normal;
 }
 .mobile-contacts-list {
+  margin-bottom: 48px;
+}
+.mobile-contacts-item:first-child {
+  margin-bottom: 24px;
 }
 .mobile-contacts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #434455;
 }
+.mobile-studio-link {
+  color: #4d5ae5;
+}
+/* MOBILE MENU SOCIALMEDIA ICONS */
+.mobile-menu-list-icon {
+  display: flex;
+  gap: 40px;
+}
+.mobile-menu-item-icon {
+}
+.mobile-menu-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-icon-link:hover,
+.mobile-menu-icon-link:focus {
+  background-color: #31d0aa;
+}
+.mobile-menu-socialmedia-icon {
+  fill: #f4f4fd;
+}
+
+/* MOBILE MENU CLOSE */
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
 }
+
 /* =========== /MOBILE MENU STYLES ===========*/
 
 /* =========== SECTION HERO STYLES ===========*/
