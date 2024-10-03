@@ -433,6 +433,7 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
 
@@ -817,15 +818,16 @@ body {
   pointer-events: auto;
 }
 .modal {
+  width: 288px;
+  min-height: 623px;
+  padding: 72px 16px 24px 16px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
+
   border-radius: 4px;
   overflow: auto;
-  padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -842,6 +844,7 @@ body {
   width: 24px;
   height: 24px;
   padding: 0;
+
   line-height: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -860,11 +863,12 @@ body {
   fill: #ffffff;
 }
 .modal-slogan {
-  max-width: 360px;
+  max-width: 256px;
+  margin-bottom: 16px;
+
   font-weight: 500;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 16px;
 }
 .modal-form-wrapper {
   margin-bottom: 8px;
@@ -872,6 +876,7 @@ body {
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -880,7 +885,8 @@ body {
 .modal-form-input {
   width: 100%;
   height: 40px;
-  padding-left: 38px;
+  padding-left: 34px;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -915,6 +921,7 @@ body {
   width: 100%;
   height: 120px;
   padding: 8px 16px;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -930,7 +937,8 @@ body {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: #8e8f99;
+  opacity: 0.5;
 }
 .modal-form-textarea:focus {
   outline: none;
@@ -944,9 +952,11 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   margin-right: 8px;
   width: 16px;
   height: 16px;
+
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
@@ -959,10 +969,10 @@ body {
   border: none;
   fill: #f4f4fd;
 }
-/* .modal-form-checkbox-input:focus + .modal-form-checkbox-label .modal-form-custom-checkbox {
-  border: 1px solid #404bbf;
-} */
 .modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -997,5 +1007,27 @@ body {
 .modal-form-send-btn:hover,
 .modal-form-send-btn:focus {
   background-color: #404bbf;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+  .modal-slogan {
+    max-width: 360px;
+  }
+  .modal-form-input {
+    padding-left: 34px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1158px) {
+  .modal-form-input {
+    padding-left: 38px;
+  }
 }
 /* =========== /MODAL STYLES ===========*/
