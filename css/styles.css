@@ -531,7 +531,6 @@ body {
 }
 
 /* DESKTOP */
-
 @media screen and (min-width: 1158px) {
   .solutions-list {
     gap: 24px;
@@ -585,7 +584,6 @@ body {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  /* width: calc((100% - 72px) / 4); */
 }
 .team-list .team-item {
   background-color: #ffffff;
@@ -598,18 +596,12 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 .text-team {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: center;
-  color: #434455;
   margin-bottom: 8px;
 }
 .team-item-icon {
@@ -635,6 +627,29 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1158px) {
+  .section-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 /* =========== /SECTION OUR TEAM STYLES ===========*/
 
