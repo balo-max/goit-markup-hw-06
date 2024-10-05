@@ -654,51 +654,34 @@ body {
 /* =========== /SECTION OUR TEAM STYLES ===========*/
 
 /* =========== SECTION OUR PORTFOLIO STYLES ===========*/
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
-}
 .portfolio-title {
   margin-right: auto;
   margin-left: auto;
-  font-weight: 700;
+  margin-bottom: 72px;
+
   font-size: 36px;
-  line-height: 1.11111;
-  letter-spacing: 0.02em;
+  line-height: 1.11;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
 }
 .name-portfolio-title {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
-}
-.portfolio-item {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  padding: 32px 16px;
 }
 .portfolio-list-item {
-  max-width: 360px;
-  height: 420px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-list-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.portfolio-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  max-width: 288px;
+  height: 400px;
 }
 .portfolio-overlay {
   position: relative;
@@ -711,6 +694,7 @@ body {
   padding: 40px 32px;
   width: 100%;
   height: 100%;
+
   background-color: #4d5ae5;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -721,10 +705,48 @@ body {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio-item {
+  padding: 32px 16px;
+
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-list-item:hover .portfolio-overlay-text {
   transform: translateY(0%);
 }
 
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .portfolio-list-item {
+    max-width: 356px;
+    height: 420px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1158px) {
+  .portfolio-list {
+    gap: 49px 24px;
+  }
+  .portfolio-list-item {
+    max-width: 360px;
+    height: 420px;
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-list-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+}
 /* =========== /SECTION OUR PORTFOLIO STYLES ===========*/
 
 /* =========== FOOTER STYLES ===========*/
