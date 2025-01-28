@@ -491,9 +491,6 @@ body {
 /* =========== /SECTION HERO STYLES ===========*/
 
 /* =========== SECTION BUSINESS SOLUTIONS =========== */
-.section-solutions {
-  padding-top: 96px;
-}
 .solutions-list {
   display: flex;
   flex-direction: column;
@@ -548,6 +545,7 @@ body {
   }
   .solutions-item {
     width: calc((100% - 72px) / 4);
+    letter-spacing: 0.019em;
   }
   .solutions-title {
     font-weight: 500;
